@@ -285,7 +285,10 @@ public class MPDSong extends MPDItem {
 
     @Override
     public String getName() {
-        return getTitle();
+        if (super.getName()==null) {
+            return getTitle();
+        }
+        return super.getName();
     }
 
     /**

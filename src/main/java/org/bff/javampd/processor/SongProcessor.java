@@ -12,7 +12,8 @@ public enum SongProcessor {
     TIME(new TimeProcessor()),
     POS(new PositionProcessor()),
     ID(new IdProcessor()),
-    DISC(new DiscProcessor());
+    DISC(new DiscProcessor()),
+    NAME(new NameProcessor());
 
     private final transient SongResponseProcessor songResponseProcessor;
 
